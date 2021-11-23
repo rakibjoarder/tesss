@@ -1,12 +1,12 @@
 <script>
 	const showMenuItem = () => {
-		if (document.querySelector("#ul").classList.contains("navul")) {
-			document.querySelector("#ul").classList.remove("navul");
+		if (document.querySelector('#ul').classList.contains('navul')) {
+			document.querySelector('#ul').classList.remove('navul');
 		} else {
-			document.querySelector("#ul").classList.add("navul");
+			document.querySelector('#ul').classList.add('navul');
 		}
 	};
-	let navItem = "User";
+	let navItem = 'User';
 
 	function setNavValue(name) {
 		navItem = name;
@@ -43,11 +43,10 @@
 		<li class="text-gray-700 font-bold py-1">
 			<a
 				href="/views/users"
-				class={navItem === "User"
-					? "border-yellow-500" +
-					  " px-4 flex justify-end border-r-4 animate-pulse "
-					: "border-white-500" + " px-4 flex justify-end border-r-4 "}
-				on:click={() => setNavValue("User")}
+				class={navItem === 'User'
+					? 'border-yellow-500' + ' px-4 flex justify-end border-r-4 animate-pulse '
+					: 'border-white-500' + ' px-4 flex justify-end border-r-4 '}
+				on:click={() => setNavValue('User')}
 			>
 				<span class="text-lg text-white mr-2">User</span>
 				<span class="text-lg text-white ">👥</span>
@@ -70,13 +69,11 @@
 		</li>
 		<li class="py-1">
 			<a
-				href="/views/users"
-				class={navItem === "Product"
-					? "border-yellow-500" +
-					  " px-4 flex justify-end border-r-4 animate-pulse "
-					: "border-white-500" +
-					  " px-4 flex justify-end border-r-4  "}
-				on:click={() => setNavValue("Product")}
+				href="/views/products"
+				class={navItem === 'Product'
+					? 'border-yellow-500' + ' px-4 flex justify-end border-r-4 animate-pulse '
+					: 'border-white-500' + ' px-4 flex justify-end border-r-4  '}
+				on:click={() => setNavValue('Product')}
 			>
 				<span class="text-lg text-white mr-2">Product</span>
 				<span class="text-lg text-white ">📦</span>
